@@ -1,8 +1,56 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+        mukta: ["Mukta Mahee", "sans-serif"],
+      },
+      colors: {
+        dark: "#171717",
+        // dark: "#252525",
+        // dark: "#111315",
+        // dark: "#30353C",
+        // dark: "#21251F",
+        // dark: "#1D1D1D",
+        // dark: "#100F11",
+        // dark: "#1A1A1A",
+        // dark: "#232323",
+        // dark: "#333333",
+        light: "#EDEDED",
+        // light: "#EEEEEE",
+        // light: "#DDDDDD",
+        // light: "#E7F6F2",
+        // light: "#F8F8F3",
+        // light: "#FFFCF6",
+        grey: "#444444",
+        // grey: "#222831",
+        // grey: "#393E46",
+        // grey: "#30475E",
+        // grey: "#2C3333",
+        // grey: "#3C3D50",
+        // grey: "#363636",
+        blue: "#2A86FF",
+        // blue: "#8EBBFF",
+        // blue: "#008FFF",
+        // blue: "#45ADFF",
+        // blue: "#4C76E2",
+      },
+      backgroundImage: {},
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          xl: "0",
+        },
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1100px",
+        "2xl": "1540px",
+      },
+    },
   },
   plugins: [],
-}
+};
