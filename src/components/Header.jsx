@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header id='home' className='bg-gray-500 h-screen'></header>
   )
 }
 

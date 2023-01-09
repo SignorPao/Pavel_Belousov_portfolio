@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+  .wrapper {
+    @apply container mx-auto;
+  }
+  .section {
+    @apply py-14 md:py-14 lg:py-16 xl:py-20 2xl:py-24;
+  }
+  /* lock body scroll when mobile menu is open */
+  .lock {
+    @apply overflow-hidden;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -24,10 +35,10 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #444444;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e9d26e;
+  background-color: #2a86ff;
   border-radius: 50px;
 }

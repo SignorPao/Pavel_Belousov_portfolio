@@ -16,7 +16,7 @@ const Wrapper = ({ children }) => {
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden font-primary">
       <Wrapper>
         <Nav />
         <Outlet />

@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ubuntu: ["Ubuntu", "sans-serif"],
-        mukta: ["Mukta Mahee", "sans-serif"],
+        primary: ["Ubuntu", "sans-serif"],
+        // ubuntu: ["Ubuntu", "sans-serif"],
+        // mukta: ["Mukta Mahee", "sans-serif"],
       },
       colors: {
         dark: "#171717",
