@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // import Link
 import { HashLink as Link } from "react-router-hash-link";
 
 // import component
 import NavMobile from "./NavMobile";
+import Switcher from "./Switcher";
 
 const Nav = () => {
   // nav state on scroll
@@ -30,30 +31,10 @@ const Nav = () => {
     return;
   }, [navMobile]);
 
-  // click outside to close mobile menu
-  // const ref = useRef();
-  // function useOnClickOutside(ref, handler) {
-  //   useEffect(() => {
-  //     const listener = (event) => {
-  //       if (!ref.current || ref.current.contains(event.target)) {
-  //         return;
-  //       }
-  //       handler(event);
-  //     };
-  //     document.addEventListener("mousedown", listener);
-  //     document.addEventListener("touchstart", listener);
-  //     return () => {
-  //       document.removeEventListener("mousedown", listener);
-  //       document.removeEventListener("touchstart", listener);
-  //     };
-  //   }, [ref, handler]);
-  // }
-  // useOnClickOutside(ref, () => setNavMobile(false));
-
   return (
     <nav
       className={`${
-        navState ? "bg-white py-2 px-4 shadow-xl" : "py-6 px-8"
+        navState ? "bg-light dark:bg-dark py-4 px-4 shadow-md dark:shadow-none" : "py-10 px-8"
       } fixed top-0 left-0 w-full z-50 ease-in duration-200 select-none`}
     >
       <div className="flex items-center justify-between">
@@ -67,9 +48,9 @@ const Nav = () => {
         </Link>
 
         {/* menu & dark/light mode */}
-        <div className="flex gap-x-4 items-center">
+        <div className="flex gap-x-4 xl:gap-x-6 items-center">
           {/* nav: mobile - hidden | desktop - show */}
-          <ul className="hidden md:flex md:gap-x-4">
+          <ul className="hidden md:flex md:gap-x-4 xl:gap-x-6 font-medium text-dark dark:text-light">
             <li>
               <Link to={"/#home"}>Home</Link>
             </li>
@@ -91,7 +72,7 @@ const Nav = () => {
           </ul>
 
           {/* dark/light mode */}
-          <div>dark/light</div>
+          <Switcher />
 
           {/* burger icon: mobile - show | desktop - hidden */}
           <button
@@ -158,7 +139,6 @@ const Nav = () => {
             className={`${
               navMobile ? "right-0" : "-right-full"
             } fixed top-0 bottom-0 w-screen transition-all z-10 lg:hidden`}
-            // ref={ref}
           >
             <NavMobile click={() => setNavMobile(!navMobile)} />
           </div>

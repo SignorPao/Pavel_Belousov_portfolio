@@ -10,11 +10,9 @@ const Main = () => {
   return (
     <>
       <Header />
-      <main className="">
-        <Skills />
-        <Works />
-        <GetInTouch />
-      </main>
+      <Skills />
+      <Works />
+      <GetInTouch />
     </>
   );
 };
