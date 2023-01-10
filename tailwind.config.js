@@ -38,7 +38,10 @@ module.exports = {
         // blue: "#45ADFF",
         // blue: "#4C76E2",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        // header: "url('assets/bg-abstract.png')",
+        header: "url('assets/bg-2.jpg')",
+      },
       container: {
         padding: {
           DEFAULT: "1rem",

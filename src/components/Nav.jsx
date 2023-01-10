@@ -41,7 +41,7 @@ const Nav = () => {
         {/* logo */}
         <Link
           to={"/#home"}
-          className="z-50 text-blue font-semibold text-2xl"
+          className="z-50 text-dark dark:text-light font-semibold text-2xl"
           onClick={() => setNavMobile(false)}
         >
           PB
@@ -64,10 +64,10 @@ const Nav = () => {
               <Link to={"/#touch"}>Contact</Link>
             </li>
             <li>
-              <Link to={"/projects"}>Projects</Link>
+              <Link to={"projects"}>Projects</Link>
             </li>
             <li>
-              <Link to={"/about"}>About</Link>
+              <Link to={"about"}>About</Link>
             </li>
           </ul>
 
