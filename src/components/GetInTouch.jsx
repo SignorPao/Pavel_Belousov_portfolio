@@ -2,7 +2,7 @@ import React from 'react'
 
 const GetInTouch = () => {
   return (
-    <section id='touch' className='bg-red-300 section'>GetInTouch</section>
+    <section id='touch' className='bg-grey/20 dark:bg-grey section'>GetInTouch</section>
   )
 }
 
