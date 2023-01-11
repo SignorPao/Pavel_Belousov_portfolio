@@ -33,7 +33,7 @@ const Skills = () => {
         </h2>
 
         {/* skills charts */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-20">
           <VisibilitySensor>
             {({ isVisible }) => {
               const percentage = isVisible ? 95 : 0;
