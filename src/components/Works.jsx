@@ -1,5 +1,12 @@
 import React from "react";
 
+// import components
+import WorksCarousel from "./WorksCarousel";
+import WorksMobileCarousel from "./WorksMobileCarousel";
+
+// import data
+import { worksCaouselData } from "../data";
+
 const Works = () => {
   return (
     <section id="works" className="bg-blue section">
@@ -10,8 +17,15 @@ const Works = () => {
         </h2>
       </div>
 
-      {/* carousel */}
-      
+      {/* mobile carousel */}
+      <div className="md:hidden bg-green-300 h-[400px] w-full">
+        <WorksMobileCarousel worksCaouselData={worksCaouselData} />
+      </div>
+
+      {/* pc caousel */}
+      <div className="hidden md:flex bg-pink-300 h-[400px] w-full">
+        <WorksCarousel worksCaouselData={worksCaouselData} />
+      </div>
     </section>
   );
 };
