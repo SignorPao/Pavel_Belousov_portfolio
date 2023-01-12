@@ -48,7 +48,7 @@ const Nav = () => {
         </Link>
 
         {/* menu & dark/light mode */}
-        <div className="flex gap-x-4 xl:gap-x-6 items-center">
+        <div className="flex gap-x-6 items-center">
           {/* nav: mobile - hidden | desktop - show */}
           <ul className="hidden md:flex md:gap-x-4 xl:gap-x-6 font-medium text-dark dark:text-light">
             <li>
