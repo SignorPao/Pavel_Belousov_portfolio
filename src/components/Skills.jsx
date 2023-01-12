@@ -1,14 +1,14 @@
 import React from "react";
 
-// import react visibility sensor
-import VisibilitySensor from "react-visibility-sensor";
+// import VisibilitySensor from "react-visibility-sensor";
+// import {
+//   buildStyles,
+//   CircularProgressbarWithChildren,
+// } from "react-circular-progressbar";
+// import "react-circular-progressbar/dist/styles.css";
 
 // import progressbar
-import {
-  buildStyles,
-  CircularProgressbarWithChildren,
-} from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
 // import icons
 import HTML from "../assets/html-5.png";
@@ -21,6 +21,78 @@ import Express from "../assets/express.png";
 import MongoDB from "../assets/mongodb.png";
 
 const Skills = () => {
+  const props1 = {
+    percent: 95,
+    colorSlice: "#FC490B",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props2 = {
+    percent: 85,
+    colorSlice: "#2196F3",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props3 = {
+    percent: 55,
+    colorSlice: "#FFDF00",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props4 = {
+    percent: 50,
+    colorSlice: "#61DAFB",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props5 = {
+    percent: 70,
+    colorSlice: "#06B6D4",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props6 = {
+    percent: 30,
+    colorSlice: "#339933",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props7 = {
+    percent: 40,
+    colorSlice: "#2A86FF",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
+  const props8 = {
+    percent: 30,
+    colorSlice: "#47A248",
+    colorCircle: "#a1a1a130",
+    size: 180,
+    stroke: 7,
+    speed: 60,
+    number: false,
+  };
   return (
     <section
       id="skills"
@@ -33,8 +105,88 @@ const Skills = () => {
         </h2>
 
         {/* skills charts */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-20">
-          <VisibilitySensor>
+        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-y-10 xl:gap-y-20 select-none">
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props1} />
+            <img
+              src={HTML}
+              alt="html"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props2} />
+            <img
+              src={CSS}
+              alt="css"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props3} />
+            <img
+              src={JS}
+              alt="js"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props4} />
+            <img
+              src={ReactLogo}
+              alt="react"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props5} />
+            <img
+              src={Tailwind}
+              alt="tailwind"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props6} />
+            <img
+              src={Node}
+              alt="node"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props7} />
+            <img
+              src={Express}
+              alt="express"
+              style={{ width: 80 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+
+          <div className="w-[180px] h-[180px] relative m-auto">
+            <CircularProgressBar {...props8} />
+            <img
+              src={MongoDB}
+              alt="mongodb"
+              style={{ width: 50 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+          </div>
+          
+          {/* <VisibilitySensor>
             {({ isVisible }) => {
               const percentage = isVisible ? 95 : 0;
               return (
@@ -176,7 +328,7 @@ const Skills = () => {
                 </CircularProgressbarWithChildren>
               );
             }}
-          </VisibilitySensor>
+          </VisibilitySensor> */}
         </div>
       </div>
     </section>
