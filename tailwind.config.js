@@ -37,6 +37,8 @@ module.exports = {
         // blue: "#008FFF",
         // blue: "#45ADFF",
         // blue: "#4C76E2",
+        lightGrey: "#DCDCDD",
+        // lightGrey: "#dee2e6",
       },
       backgroundImage: {
         // header: "url('assets/bg-abstract.png')",
