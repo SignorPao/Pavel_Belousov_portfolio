@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-header bg-cover bg-dark/10 dark:bg-dark/90 bg-blend-multiply dark:bg-blend-color-burn h-fit xl:h-screen bg-move">
       <div className="wrapper flex flex-col lg:flex-row justify-between h-full">
         {/* image */}
-        <div className="flex-1 lg:flex-[60%] xl:flex-[55%] pt-16 lg:pt-0 w-full h-full flex items-center justify-center border-b border-grey/30 dark:border-grey lg:border-none">
+        <div className="flex-1 lg:flex-[60%] xl:flex-[58%] pt-16 lg:pt-0 w-full h-full flex items-center justify-center border-b border-grey/30 dark:border-grey lg:border-none">
           <img
             src={HeroImg}
             alt="hero"
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* text */}
-        <div className="flex-1 lg:flex-[40%] xl:flex-[45%] px-4 py-8 flex flex-col gap-y-6 justify-center items-center lg:items-start text-center lg:text-left">
+        <div className="flex-1 lg:flex-[40%] xl:flex-[42%] px-4 py-8 flex flex-col gap-y-6 justify-center items-center lg:items-start text-center lg:text-left">
           {/* title */}
           <h1 className="text-blue font-light text-6xl lg:text-7xl xl:text-8xl">
             Pavel Belousov

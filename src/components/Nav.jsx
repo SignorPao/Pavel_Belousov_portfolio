@@ -50,7 +50,7 @@ const Nav = () => {
         {/* menu & dark/light mode */}
         <div className="flex gap-x-6 items-center">
           {/* nav: mobile - hidden | desktop - show */}
-          <ul className="hidden md:flex md:gap-x-4 xl:gap-x-6 font-medium text-dark dark:text-light">
+          <ul className="hidden md:flex md:gap-x-4 xl:gap-x-8 2xl:gap-x-10 font-medium text-dark dark:text-light">
             <li>
               <Link to={"/#home"}>Home</Link>
             </li>

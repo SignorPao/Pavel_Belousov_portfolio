@@ -43,6 +43,7 @@ module.exports = {
       backgroundImage: {
         // header: "url('assets/bg-abstract.png')",
         header: "url('assets/bg-2.jpg')",
+        // about: "url('assets/bg-2.jpg')",
       },
       container: {
         padding: {
