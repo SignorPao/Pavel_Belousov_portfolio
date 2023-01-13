@@ -101,11 +101,11 @@ const GetInTouch = () => {
             <a
               href="https://telegram.me/signor_Pao"
               target="_blank"
-              className="btn w-full border border-[#26A5E4] hover:bg-[#26A5E4] transition duration-300 grid place-items-center group"
+              className="py-[10px] rounded w-full border border-[#26A5E4] hover:bg-[#26A5E4] transition duration-300 grid place-items-center group"
             >
               <svg
-                width="30px"
-                height="30px"
+                width="40px"
+                height="40px"
                 viewBox="0 0 48 48"
                 fill="#26A5E4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,11 +120,11 @@ const GetInTouch = () => {
             <a
               href="https://wa.me/89969587558"
               target="_blank"
-              className="btn w-full border border-[#25D366] hover:bg-[#25D366] transition duration-300 grid place-items-center group"
+              className="py-[10px] rounded w-full border border-[#25D366] hover:bg-[#25D366] transition duration-300 grid place-items-center group"
             >
               <svg
-                width="30px"
-                height="30px"
+                width="40px"
+                height="40px"
                 viewBox="0 0 24 24"
                 fill="#25D366"
                 xmlns="http://www.w3.org/2000/svg"

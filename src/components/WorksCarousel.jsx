@@ -44,7 +44,7 @@ const WorksCarousel = () => {
         return (
           <SwiperSlide
             key={index}
-            className="bg-grey h-full max-w-[450px] lg:max-w-[500px] xl:max-w-[600px] 2xl:min-w-[700px] select-none flex flex-col gap-y-6 p-6"
+            className="bg-grey h-full max-w-[450px] lg:max-w-[500px] xl:max-w-[600px] 2xl:min-w-[700px] select-none flex flex-col gap-y-6 p-6 rounded"
           >
             {/* image */}
             <div className="h-[80%] w-full overflow-hidden flex items-center justify-center">
@@ -53,7 +53,7 @@ const WorksCarousel = () => {
 
             {/* buttons */}
             <div className="h-[20%] w-full flex items-center justify-center gap-x-6">
-              <a href={code} className="btn btn-secondary" target="_blank">
+              <a href={code} className="btn text-light btn-secondary" target="_blank">
                 Source code
               </a>
               <a href={demo} className="btn btn-primary" target="_blank">

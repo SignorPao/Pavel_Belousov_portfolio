@@ -12,6 +12,20 @@ import Pc3 from "../src/assets/works/Screenshot_2-min.webp";
 import Pc4 from "../src/assets/works/Screenshot_3-min.webp";
 import Pc5 from "../src/assets/works/Screenshot_4-min.webp";
 import Pc6 from "../src/assets/works/Screenshot_7-min.webp";
+import Pc7 from "../src/assets/works/Screenshot_5-min.webp";
+import Pc8 from "../src/assets/works/Screenshot_6-min.webp";
+import Pc9 from "../src/assets/works/Screenshot_8-min.webp";
+import Pc10 from "../src/assets/works/Screenshot_9-min.webp";
+import Pc11 from "../src/assets/works/Screenshot_10-min.webp";
+import Pc12 from "../src/assets/works/Screenshot_11-min.webp";
+import Pc13 from "../src/assets/works/Screenshot_12-min.webp";
+import Pc14 from "../src/assets/works/Screenshot_13-min.webp";
+import Pc15 from "../src/assets/works/Screenshot_15-min.webp";
+import Pc16 from "../src/assets/works/Screenshot_16-min.webp";
+import Pc17 from "../src/assets/works/Screenshot_18-min.webp";
+import Pc18 from "../src/assets/works/Screenshot_19-min.webp";
+import Pc19 from "../src/assets/works/Screenshot_21-min.webp";
+import Pc20 from "../src/assets/works/Screenshot_23-min.webp";
 
 // works mobile carousel data
 export const worksMobileCarouselData = [
@@ -78,5 +92,109 @@ export const worksCaouselData = [
     image: Pc6,
     code: "https://github.com/SignorPao/react-animated-website-6",
     demo: "https://signorpao.github.io/react-animated-website-6/",
+  },
+];
+
+// projects page data
+export const projectsData = [
+  {
+    image: Pc1,
+    code: "https://github.com/SignorPao/figma-project-four",
+    demo: "https://figma-project-four.vercel.app/",
+  },
+  {
+    image: Pc2,
+    code: "https://github.com/SignorPao/react-ecommerce-2",
+    demo: "https://react-ecommerce-2.netlify.app/",
+  },
+  {
+    image: Pc3,
+    code: "https://github.com/SignorPao/react-crypto-app",
+    demo: "https://react-crypto-app-mp.netlify.app/",
+  },
+  {
+    image: Pc4,
+    code: "https://github.com/SignorPao/figma-project-3",
+    demo: "https://signorpao.github.io/figma-project-3/",
+  },
+  {
+    image: Pc5,
+    code: "https://github.com/SignorPao/react-animated-website-8",
+    demo: "https://react-animated-website-8.vercel.app/",
+  },
+  {
+    image: Pc6,
+    code: "https://github.com/SignorPao/react-animated-website-6",
+    demo: "https://signorpao.github.io/react-animated-website-6/",
+  },
+  {
+    image: Pc7,
+    code: "https://github.com/SignorPao/figma-project-2",
+    demo: "https://signorpao.github.io/figma-project-2/",
+  },
+  {
+    image: Pc8,
+    code: "https://signorpao.github.io/react-animated-website-7",
+    demo: "https://signorpao.github.io/react-animated-website-7/",
+  },
+  {
+    image: Pc9,
+    code: "https://signorpao.github.io/react-animated-website-5",
+    demo: "https://signorpao.github.io/react-animated-website-5/",
+  },
+  {
+    image: Pc10,
+    code: "https://signorpao.github.io/react-animated-website-4",
+    demo: "https://signorpao.github.io/react-animated-website-4/",
+  },
+  {
+    image: Pc11,
+    code: "https://signorpao.github.io/react-animated-website-3",
+    demo: "https://signorpao.github.io/react-animated-website-3/",
+  },
+  {
+    image: Pc12,
+    code: "https://signorpao.github.io/react-animated-website-2",
+    demo: "https://signorpao.github.io/react-animated-website-2/",
+  },
+  {
+    image: Pc13,
+    code: "https://signorpao.github.io/react-animated-website",
+    demo: "https://signorpao.github.io/react-animated-website/",
+  },
+  {
+    image: Pc14,
+    code: "https://signorpao.github.io/react-gym-website",
+    demo: "https://signorpao.github.io/react-gym-website/",
+  },
+  {
+    image: Pc15,
+    code: "https://signorpao.github.io/online-store",
+    demo: "https://signorpao.github.io/online-store/",
+  },
+  {
+    image: Pc16,
+    code: "https://signorpao.github.io/parallax-website",
+    demo: "https://signorpao.github.io/parallax-website/",
+  },
+  {
+    image: Pc17,
+    code: "https://signorpao.github.io/bootstrap-2",
+    demo: "https://signorpao.github.io/bootstrap-2/",
+  },
+  {
+    image: Pc18,
+    code: "https://signorpao.github.io/css-grid-1",
+    demo: "https://signorpao.github.io/css-grid-1/",
+  },
+  {
+    image: Pc19,
+    code: "https://signorpao.github.io/css-flexbox-1",
+    demo: "https://signorpao.github.io/css-flexbox-1/",
+  },
+  {
+    image: Pc20,
+    code: "https://signorpao.github.io/bootstrap-0",
+    demo: "https://signorpao.github.io/bootstrap-0/",
   },
 ];
