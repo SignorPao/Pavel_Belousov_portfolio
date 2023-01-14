@@ -22,9 +22,9 @@ const Footer = () => {
             </Link>
 
             <p className="text-center text-sm md:text-left text-dark/90 dark:text-light/50 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium assumenda illo nam? Assumenda doloribus cumque,
-              laboriosam nihil quas quos obcaecati!
+              Content creation is my passion! For many years, programming and
+              design was just a hobby for me. Now I have set the task - to turn
+              a hobby into a favorite profession.
             </p>
           </div>
 
@@ -121,7 +121,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <svg
-                      fill="#000000"
+                      fill="#171717"
                       width="30px"
                       height="30px"
                       viewBox="0 0 32 32"
@@ -165,7 +165,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <svg
-                      fill="#000000"
+                      fill="#171717"
                       width="30px"
                       height="30px"
                       viewBox="0 0 32 32"
@@ -186,7 +186,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <svg
-                      fill="#000000"
+                      fill="#171717"
                       width="30px"
                       height="30px"
                       viewBox="0 0 32 32"

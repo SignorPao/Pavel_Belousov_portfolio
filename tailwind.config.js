@@ -7,6 +7,7 @@ module.exports = {
         primary: ["Ubuntu", "sans-serif"],
         // ubuntu: ["Ubuntu", "sans-serif"],
         // mukta: ["Mukta Mahee", "sans-serif"],
+        crimson: ['Crimson Pro', 'serif'],
       },
       colors: {
         dark: "#171717",

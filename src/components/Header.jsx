@@ -36,9 +36,9 @@ const Header = () => {
 
           {/* description */}
           <div className="text-dark/90 dark:text-light/50 font-light text-base leading-6 lg:text-lg xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            officiis saepe distinctio enim, nihil corporis nam molestiae omnis
-            dolorem. Quam!
+            Content creation is my passion! For many years, programming and
+            design was just a hobby for me. Now I have set the task - to turn a
+            hobby into a favorite profession.
           </div>
 
           {/* buttons */}
