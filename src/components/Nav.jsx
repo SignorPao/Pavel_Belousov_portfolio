@@ -34,7 +34,9 @@ const Nav = () => {
   return (
     <nav
       className={`${
-        navState ? "bg-light dark:bg-dark py-4 px-4 shadow-md dark:shadow-none" : "py-10 px-8"
+        navState
+          ? "bg-light dark:bg-dark py-4 px-4 shadow-md dark:shadow-none"
+          : "py-10 px-8"
       } fixed top-0 left-0 w-full z-50 ease-in duration-200 select-none`}
     >
       <div className="flex items-center justify-between">
@@ -44,32 +46,32 @@ const Nav = () => {
           className="z-50 text-dark dark:text-light font-semibold text-2xl"
           onClick={() => setNavMobile(false)}
         >
-          PB
+          <div className="w-9 h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
         </Link>
 
         {/* menu & dark/light mode */}
         <div className="flex gap-x-6 items-center">
           {/* nav: mobile - hidden | desktop - show */}
-          <ul className="hidden md:flex md:gap-x-4 xl:gap-x-8 2xl:gap-x-10 font-medium text-dark dark:text-light">
-            <li>
-              <Link to={"/#home"}>Home</Link>
-            </li>
-            <li>
-              <Link to={"/#skills"}>Skills</Link>
-            </li>
-            <li>
-              <Link to={"/#works"}>Works</Link>
-            </li>
-            <li>
-              <Link to={"/#touch"}>Contact</Link>
-            </li>
-            <li>
-              <Link to={"projects"}>Projects</Link>
-            </li>
-            <li>
-              <Link to={"about"}>About</Link>
-            </li>
-          </ul>
+          <div className="hidden md:flex md:gap-x-4 xl:gap-x-8 2xl:gap-x-10 font-medium text-dark dark:text-light">
+            <Link to={"/#home"} className="link">
+              Home
+            </Link>
+            <Link to={"/#skills"} className="link">
+              Skills
+            </Link>
+            <Link to={"/#works"} className="link">
+              Works
+            </Link>
+            <Link to={"/#touch"} className="link">
+              Contact
+            </Link>
+            <Link to={"projects"} className="link">
+              Projects
+            </Link>
+            <Link to={"about"} className="link">
+              About
+            </Link>
+          </div>
 
           {/* dark/light mode */}
           <Switcher />

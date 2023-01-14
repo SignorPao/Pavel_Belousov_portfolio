@@ -72,8 +72,8 @@ const About = () => {
               I'm working on it :)
             </p>
             <p>
-              I regularly practice web design using figma and photoshop. I am
-              fairly familiar with basic linux terminal commands. I have real
+              I regularly practice web design using Figma and Photoshop. I am
+              fairly familiar with basic Linux terminal commands. I have real
               experience in copywriting: written more than 100 articles of which
               92 are currently sold, without a single return or negative
               feedback.
@@ -166,7 +166,6 @@ const About = () => {
                 </svg>
               </a>
             </li>
-
           </ul>
         </div>
       </div>

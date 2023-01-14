@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const NavMobile = ({ click }) => {
   return (
     <div className="w-full h-full bg-dark text-light">
-      <ul className="h-full flex flex-col justify-center items-center gap-y-8">
+      <ul className="h-full flex flex-col justify-center items-center gap-y-10 text-2xl">
         <li>
           <Link to={"/#home"} onClick={click}>
             Home

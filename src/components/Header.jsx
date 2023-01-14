@@ -9,6 +9,9 @@ import HeroImg from "../assets/hero-2.png";
 // import CV
 import CV from "../assets/Pavel_Belousov_CV.pdf";
 
+// import typing animation
+import { TypeAnimation } from "react-type-animation";
+
 const Header = () => {
   return (
     <header className="bg-header bg-cover bg-dark/10 dark:bg-dark/90 bg-blend-multiply dark:bg-blend-color-burn h-fit xl:h-screen bg-move">
@@ -31,7 +34,21 @@ const Header = () => {
 
           {/* subtitle */}
           <div className="text-dark dark:text-light font-medium text-3xl lg:text-4xl">
-            Web developer
+            {/* Web developer */}
+            <TypeAnimation
+              sequence={[
+                "Web developer",
+                3000,
+                // "Web designer",
+                // 3000,
+                "Content creator",
+                3000,
+              ]}
+              cursor={true}
+              repeat={Infinity}
+              speed={1} 
+              // deletionSpeed={99}
+            />
           </div>
 
           {/* description */}

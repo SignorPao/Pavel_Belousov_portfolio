@@ -7,7 +7,7 @@ module.exports = {
         primary: ["Ubuntu", "sans-serif"],
         // ubuntu: ["Ubuntu", "sans-serif"],
         // mukta: ["Mukta Mahee", "sans-serif"],
-        crimson: ['Crimson Pro', 'serif'],
+        crimson: ["Crimson Pro", "serif"],
       },
       colors: {
         dark: "#171717",
@@ -41,11 +41,11 @@ module.exports = {
         lightGrey: "#DCDCDD",
         // lightGrey: "#dee2e6",
       },
-      backgroundImage: {
-        // header: "url('assets/bg-abstract.png')",
+      backgroundImage: (theme) => ({
         header: "url('assets/bg-2.jpg')",
-        // about: "url('assets/bg-2.jpg')",
-      },
+        logoDark: "url('assets/PB2.png')",
+        logoLight: "url('assets/PB.png')",
+      }),
       container: {
         padding: {
           DEFAULT: "1rem",
@@ -59,6 +59,11 @@ module.exports = {
         xl: "1100px",
         "2xl": "1540px",
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ["dark"],
     },
   },
   plugins: [],

@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="md:flex-[30%] flex flex-col gap-y-3 items-center md:items-start">
             <Link to={"/#home"}>
               <div className="flex items-center gap-x-2">
-                <span className="text-3xl">PB</span>
+                <div className="w-9 h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
                 <span className="text-xl">Pavel Belousov</span>
               </div>
             </Link>

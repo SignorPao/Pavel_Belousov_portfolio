@@ -115,3 +115,18 @@ html.dark ::-webkit-scrollbar-track {
 .worksCarousel .swiper-pagination-bullet-active {
   background: #171717;
 }
+
+/* link hover effect */
+.link::after {
+  content: '';
+  width: 0;
+  height: 2.3px;
+  background-color: #2A86FF;
+  margin: auto;
+  display: block;
+}
+
+.link:hover::after {
+  width: 100%;
+  transition: width 0.1s linear;
+}
