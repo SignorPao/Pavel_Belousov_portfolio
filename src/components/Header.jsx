@@ -34,17 +34,11 @@ const Header = () => {
 
           {/* subtitle */}
           <div className="text-dark dark:text-light font-medium text-3xl lg:text-4xl">
-            {/* Web developer */}
             <TypeAnimation
-              sequence={[
-                "Web developer",
-                3000,
-                "Content creator",
-                3000,
-              ]}
+              sequence={["Web developer", 3000, "Content creator", 3000]}
               cursor={true}
               repeat={Infinity}
-              speed={1} 
+              speed={1}
             />
           </div>
 

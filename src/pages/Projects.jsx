@@ -39,6 +39,7 @@ const Projects = () => {
                     href={code}
                     className="btn text-xs lg:text-lg text-light btn-secondary btnHover"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Source code
                   </a>
@@ -46,6 +47,7 @@ const Projects = () => {
                     href={demo}
                     className="btn text-xs lg:text-lg btn-primary btnHover"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live demo
                   </a>

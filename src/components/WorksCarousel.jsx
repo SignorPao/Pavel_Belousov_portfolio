@@ -48,15 +48,29 @@ const WorksCarousel = () => {
           >
             {/* image */}
             <div className="h-[80%] w-full overflow-hidden flex items-center justify-center">
-              <img src={image} alt="works" className="object-cover h-full max-w-full" />
+              <img
+                src={image}
+                alt="works"
+                className="object-cover h-full max-w-full"
+              />
             </div>
 
             {/* buttons */}
             <div className="h-[20%] w-full flex items-center justify-center gap-x-6">
-              <a href={code} className="btn text-light btn-secondary btnHover" target="_blank">
+              <a
+                href={code}
+                className="btn text-light btn-secondary btnHover"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Source code
               </a>
-              <a href={demo} className="btn btn-primary btnHover" target="_blank">
+              <a
+                href={demo}
+                className="btn btn-primary btnHover"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Live demo
               </a>
             </div>

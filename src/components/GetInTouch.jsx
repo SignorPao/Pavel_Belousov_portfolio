@@ -102,6 +102,7 @@ const GetInTouch = () => {
             <a
               href="https://telegram.me/signor_Pao"
               target="_blank"
+              rel="noopener noreferrer"
               className="py-[10px] rounded w-full border border-[#26A5E4] hover:bg-[#26A5E4] transition duration-300 grid place-items-center group"
             >
               <svg
@@ -121,6 +122,7 @@ const GetInTouch = () => {
             <a
               href="https://wa.me/89969587558"
               target="_blank"
+              rel="noopener noreferrer"
               className="py-[10px] rounded w-full border border-[#25D366] hover:bg-[#25D366] transition duration-300 grid place-items-center group"
             >
               <svg

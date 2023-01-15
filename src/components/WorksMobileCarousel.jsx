@@ -43,10 +43,20 @@ const WorksMobileCarousel = () => {
 
             {/* buttons */}
             <div className="w-full flex flex-col items-center justify-center gap-y-6">
-              <a href={code} className="btn text-light btn-secondary" target="_blank">
+              <a
+                href={code}
+                className="btn text-light btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Source code
               </a>
-              <a href={demo} className="btn btn-primary" target="_blank">
+              <a
+                href={demo}
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Live demo
               </a>
             </div>
