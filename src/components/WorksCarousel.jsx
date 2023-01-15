@@ -53,10 +53,10 @@ const WorksCarousel = () => {
 
             {/* buttons */}
             <div className="h-[20%] w-full flex items-center justify-center gap-x-6">
-              <a href={code} className="btn text-light btn-secondary" target="_blank">
+              <a href={code} className="btn text-light btn-secondary btnHover" target="_blank">
                 Source code
               </a>
-              <a href={demo} className="btn btn-primary" target="_blank">
+              <a href={demo} className="btn btn-primary btnHover" target="_blank">
                 Live demo
               </a>
             </div>

@@ -4,10 +4,10 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 // import hero image
-import HeroImg from "../assets/hero-2.png";
+import HeroImg from "../assets/hero-2.webp";
 
 // import CV
-import CV from "../assets/Pavel_Belousov_CV.pdf";
+import CV from "../assets/Pavel_Belousov_CV_2.pdf";
 
 // import typing animation
 import { TypeAnimation } from "react-type-animation";
@@ -39,15 +39,12 @@ const Header = () => {
               sequence={[
                 "Web developer",
                 3000,
-                // "Web designer",
-                // 3000,
                 "Content creator",
                 3000,
               ]}
               cursor={true}
               repeat={Infinity}
               speed={1} 
-              // deletionSpeed={99}
             />
           </div>
 
@@ -60,10 +57,10 @@ const Header = () => {
 
           {/* buttons */}
           <div className="flex flex-col gap-y-6 items-center justify-center md:flex-row md:gap-x-4 lg:flex-col lg:items-start xl:flex-row">
-            <a href={CV} download className="btn btn-primary">
+            <a href={CV} download className="btn btn-primary btnHover">
               Download CV
             </a>
-            <Link to={"about"} className="btn btn-secondary">
+            <Link to={"about"} className="btn btn-secondary btnHover">
               Know Me
             </Link>
           </div>

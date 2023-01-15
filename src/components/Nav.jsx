@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // import Link
 import { HashLink as Link } from "react-router-hash-link";
 
-// import component
+// import components
 import NavMobile from "./NavMobile";
 import Switcher from "./Switcher";
 

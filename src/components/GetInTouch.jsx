@@ -47,8 +47,9 @@ const GetInTouch = () => {
     <section id="touch" className="bg-lightGrey dark:bg-grey section">
       <div className="wrapper">
         {/* title */}
-        <h2 className="uppercase text-blue font-medium tracking-wide mb-10 text-center lg:text-left lg:text-xl">
+        <h2 className="uppercase text-blue font-medium tracking-wide mb-10 text-center lg:text-left lg:text-xl flex items-center">
           Get in touch
+          <div className="w-12 h-[1px] lg:h-[1.6px] bg-blue ml-3" />
         </h2>
 
         {/* contacts form */}
@@ -81,7 +82,7 @@ const GetInTouch = () => {
               className="bg-transparent border border-grey dark:border-light rounded px-4 py-2 outline-none focus:ring-0 placeholder-grey/50 dark:placeholder-light/50 text-grey dark:text-light text-lg resize-none"
             />
             <div className="flex gap-x-8 items-center">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary btnHover">
                 Send Message
               </button>
               {/* info message */}

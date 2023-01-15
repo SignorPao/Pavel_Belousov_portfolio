@@ -9,11 +9,11 @@ const year = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="bg-light dark:bg-dark section text-dark dark:text-light">
-      <div className="wrapper">
+      <div className="wrapper flex flex-col gap-y-4">
         {/* footer top */}
-        <div className="border-b border-grey/30 dark:border-grey pb-6 flex flex-col gap-y-8 lg:gap-y-0 md:flex-row md:gap-x-6">
+        <div className="border-b border-grey/30 dark:border-grey pb-12 flex flex-col gap-y-14 md:gap-y-0 md:flex-row md:gap-x-6">
           {/* logo & description */}
-          <div className="md:flex-[30%] flex flex-col gap-y-3 items-center md:items-start">
+          <div className="md:flex-[30%] flex flex-col gap-y-3">
             <Link to={"/#home"}>
               <div className="flex items-center gap-x-2">
                 <div className="w-9 h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </Link>
 
-            <p className="text-center text-sm md:text-left text-dark/90 dark:text-light/50 font-light">
+            <p className="text-sm text-dark/90 dark:text-light/50 font-light">
               Content creation is my passion! For many years, programming and
               design was just a hobby for me. Now I have set the task - to turn
               a hobby into a favorite profession.
@@ -29,34 +29,37 @@ const Footer = () => {
           </div>
 
           {/* links */}
-          <div className="md:flex-[30%]">
-            <ul className="w-full flex flex-wrap gap-y-4">
-              <li className="w-1/2 text-center">
+          <div className="md:flex-[30%] flex flex-col gap-y-4">
+            <p className="text-sm md:text-center text-dark/90 dark:text-light/50">
+              Quick links
+            </p>
+            <ul className="w-full flex flex-wrap gap-y-4 md:pl-[20%] 2xl:pl-[25%]">
+              <li className="w-1/2">
                 <Link to={"/#home"} className="hover:underline">
                   Home
                 </Link>
               </li>
-              <li className="w-1/2 text-center">
+              <li className="w-1/2">
                 <Link to={"/#skills"} className="hover:underline">
                   Skills
                 </Link>
               </li>
-              <li className="w-1/2 text-center">
+              <li className="w-1/2">
                 <Link to={"/#works"} className="hover:underline">
                   Works
                 </Link>
               </li>
-              <li className="w-1/2 text-center">
+              <li className="w-1/2">
                 <Link to={"/#touch"} className="hover:underline">
                   Contact
                 </Link>
               </li>
-              <li className="w-1/2 text-center">
+              <li className="w-1/2">
                 <Link to={"projects"} className="hover:underline">
                   Projects
                 </Link>
               </li>
-              <li className="w-1/2 text-center">
+              <li className="w-1/2">
                 <Link to={"about"} className="hover:underline">
                   About
                 </Link>
@@ -65,8 +68,8 @@ const Footer = () => {
           </div>
 
           {/* socials */}
-          <div className="md:flex-[30%] flex flex-col gap-y-4 md:items-end">
-            <p className="text-center text-sm text-dark/90 dark:text-light/50">
+          <div className="md:flex-[30%] flex flex-col gap-y-4 items-start md:items-end">
+            <p className="text-sm text-dark/90 dark:text-light/50">
               Follow & contact me
             </p>
             <div className="flex gap-x-4 xl:gap-x-6 items-center justify-center md:flex-col md:gap-y-6 lg:flex-row">
@@ -205,7 +208,7 @@ const Footer = () => {
         </div>
 
         {/* footer bottom */}
-        <div className="flex flex-col lg:flex-row gap-y-2 lg:justify-between text-xs pt-6 text-dark/90 dark:text-light/50">
+        <div className="flex justify-between text-xs pt-6 text-dark/90 dark:text-light/50">
           <div className="text-center lg:text-left">
             &copy; {year} Pavel Belousov
           </div>
