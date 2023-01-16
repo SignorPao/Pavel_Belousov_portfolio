@@ -28,12 +28,12 @@ const Header = () => {
         {/* text */}
         <div className="flex-1 lg:flex-[40%] xl:flex-[42%] px-4 py-8 flex flex-col gap-y-6 justify-center items-center lg:items-start text-center lg:text-left">
           {/* title */}
-          <h1 className="text-blue font-light text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="text-blue font-light text-3xl md:text-4xl lg:text-7xl xl:text-8xl">
             Pavel Belousov
           </h1>
 
           {/* subtitle */}
-          <div className="text-dark dark:text-light font-medium text-3xl lg:text-4xl">
+          <div className="text-dark dark:text-light font-medium text-xl md:text-3xl lg:text-4xl">
             <TypeAnimation
               sequence={["Web developer", 3000, "Content creator", 3000]}
               cursor={true}

@@ -14,7 +14,7 @@ const About = () => {
         <div className="wrapper w-full h-full flex flex-col gap-y-8 md:flex-row">
           {/* title */}
           <div className="flex-1 flex items-center">
-            <h1 className="text-dark dark:text-light font-light text-6xl lg:text-7xl xl:text-8xl capitalize">
+            <h1 className="text-dark dark:text-light font-light text-3xl md:text-4xl lg:text-7xl xl:text-8xl capitalize">
               About me
             </h1>
           </div>
@@ -36,7 +36,7 @@ const About = () => {
           {/* text */}
           <div className="md:flex-[65%] flex flex-col gap-y-6 lg:gap-y-10 xl:gap-y-12">
             {/* title */}
-            <h2 className="text-blue font-light text-4xl lg:text-5xl xl:text-6xl">
+            <h2 className="text-blue font-light text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               Hey, I'm Pavel
             </h2>
 

@@ -35,7 +35,7 @@ const Nav = () => {
     <nav
       className={`${
         navState
-          ? "bg-light dark:bg-dark py-4 px-4 shadow-md dark:shadow-none"
+          ? "bg-light dark:bg-dark py-2 lg:py-4 px-4 shadow-md dark:shadow-none"
           : "py-10 px-8"
       } fixed top-0 left-0 w-full z-50 ease-in duration-200 select-none`}
     >
@@ -43,10 +43,10 @@ const Nav = () => {
         {/* logo */}
         <Link
           to={"/#home"}
-          className="z-50 text-dark dark:text-light font-semibold text-2xl"
+          className="z-50"
           onClick={() => setNavMobile(false)}
         >
-          <div className="w-9 h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
+          <div className="w-7 h-8 lg:w-9 lg:h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
         </Link>
 
         {/* menu & dark/light mode */}
@@ -78,7 +78,7 @@ const Nav = () => {
 
           {/* burger icon: mobile - show | desktop - hidden */}
           <button
-            className="md:hidden z-50 w-12 h-12 bg-blue rounded-full grid place-items-center"
+            className="md:hidden z-50 w-9 h-9 lg:w-12 lg:h-12 bg-blue rounded-full grid place-items-center"
             onClick={() => setNavMobile((prev) => !prev)}
           >
             {navMobile ? (
