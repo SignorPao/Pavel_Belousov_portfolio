@@ -17,6 +17,7 @@
   .lock {
     @apply overflow-hidden;
   }
+  
   .btn {
     @apply uppercase py-4 px-8 rounded font-medium w-fit tracking-wide lg:text-xl relative overflow-hidden;
   }
