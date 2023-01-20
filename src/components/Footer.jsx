@@ -3,10 +3,16 @@ import React from "react";
 // import Link
 import { HashLink as Link } from "react-router-hash-link";
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 // get current year
 const year = new Date().getFullYear();
 
 const Footer = () => {
+  // translation
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-light dark:bg-dark section text-dark dark:text-light">
       <div className="wrapper flex flex-col gap-y-4">
@@ -17,51 +23,58 @@ const Footer = () => {
             <Link to={"/#home"}>
               <div className="flex items-center gap-x-2">
                 <div className="w-9 h-10 bg-logoDark dark:bg-logoLight bg-center bg-contain bg-no-repeat" />
-                <span className="text-xl">Pavel Belousov</span>
+                <span className="text-xl">
+                  {/* Pavel Belousov */}
+                  {t("header__title")}
+                </span>
               </div>
             </Link>
 
             <p className="text-sm text-dark/90 dark:text-light/50 font-light">
-              Content creation is my passion! For many years, programming and
-              design was just a hobby for me. Now I have set the task - to turn
-              a hobby into a favorite profession.
+              {t('header__description')}
             </p>
           </div>
 
           {/* links */}
           <div className="md:flex-[30%] flex flex-col gap-y-4">
             <p className="text-sm md:text-center text-dark/90 dark:text-light/50">
-              Quick links
+              {t("quick__links")}
             </p>
             <ul className="w-full flex flex-wrap gap-y-4 md:pl-[20%] 2xl:pl-[25%]">
               <li className="w-1/2">
                 <Link to={"/#home"} className="hover:underline">
-                  Home
+                  {/* Home */}
+                  {t('menu__link_1')}
                 </Link>
               </li>
               <li className="w-1/2">
                 <Link to={"/#skills"} className="hover:underline">
-                  Skills
+                  {/* Skills */}
+                  {t('menu__link_2')}
                 </Link>
               </li>
               <li className="w-1/2">
                 <Link to={"/#works"} className="hover:underline">
-                  Works
+                  {/* Works */}
+                  {t('menu__link_3')}
                 </Link>
               </li>
               <li className="w-1/2">
                 <Link to={"/#touch"} className="hover:underline">
-                  Contact
+                  {/* Contact */}
+                  {t('menu__link_4')}
                 </Link>
               </li>
               <li className="w-1/2">
                 <Link to={"projects"} className="hover:underline">
-                  Projects
+                  {/* Projects */}
+                  {t('menu__link_5')}
                 </Link>
               </li>
               <li className="w-1/2">
                 <Link to={"about"} className="hover:underline">
-                  About
+                  {/* About */}
+                  {t('menu__link_6')}
                 </Link>
               </li>
             </ul>
@@ -70,7 +83,8 @@ const Footer = () => {
           {/* socials */}
           <div className="md:flex-[30%] flex flex-col gap-y-4 items-start md:items-end">
             <p className="text-sm text-dark/90 dark:text-light/50">
-              Follow & contact me
+              {/* Follow & contact me */}
+              {t("follow")}
             </p>
             <div className="flex gap-x-4 xl:gap-x-6 items-center justify-center md:flex-col md:gap-y-6 lg:flex-row">
               <ul className="flex gap-x-4 xl:gap-x-8 justify-center">
@@ -210,10 +224,10 @@ const Footer = () => {
         {/* footer bottom */}
         <div className="flex justify-between text-xs pt-6 text-dark/90 dark:text-light/50">
           <div className="text-center lg:text-left">
-            &copy; {year} Pavel Belousov
+            &copy; {year} {t("header__title")}
           </div>
           <div className="text-center lg:text-left">
-            Created by{" "}
+            {t("created")}
             <a
               href="https://github.com/SignorPao"
               target="_blank"

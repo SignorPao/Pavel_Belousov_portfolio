@@ -7,6 +7,11 @@ import { HashLink as Link } from "react-router-hash-link";
 import NavMobile from "./NavMobile";
 import Switcher from "./Switcher";
 
+// i18n
+import i18n from "../i18n";
+import useLocalstorage from "../hooks/useLocalstorage";
+import { t } from "i18next";
+
 const Nav = () => {
   // nav state on scroll
   const [navState, isNavState] = useState(false);
@@ -31,6 +36,20 @@ const Nav = () => {
     return;
   }, [navMobile]);
 
+  // change language
+  const [language, setLanguage] = useLocalstorage("language", "en");
+
+  const handleLanguageChange = () => {
+    if (language === "en") {
+      i18n.changeLanguage("ru");
+      setLanguage("ru");
+    } else if (language === "ru") {
+      i18n.changeLanguage("en");
+      setLanguage("en");
+    }
+    window.location.reload(false);
+  };
+
   return (
     <nav
       className={`${
@@ -54,27 +73,41 @@ const Nav = () => {
           {/* nav: mobile - hidden | desktop - show */}
           <div className="hidden md:flex md:gap-x-4 xl:gap-x-8 2xl:gap-x-10 font-medium text-dark dark:text-light">
             <Link to={"/#home"} className="link">
-              Home
+              {/* Home */}
+              {t('menu__link_1')}
             </Link>
             <Link to={"/#skills"} className="link">
-              Skills
+              {/* Skills */}
+              {t('menu__link_2')}
             </Link>
             <Link to={"/#works"} className="link">
-              Works
+              {/* Works */}
+              {t('menu__link_3')}
             </Link>
             <Link to={"/#touch"} className="link">
-              Contact
+              {/* Contact */}
+              {t('menu__link_4')}
             </Link>
             <Link to={"projects"} className="link">
-              Projects
+              {/* Projects */}
+              {t('menu__link_5')}
             </Link>
             <Link to={"about"} className="link">
-              About
+              {/* About */}
+              {t('menu__link_6')}
             </Link>
           </div>
 
           {/* dark/light mode */}
           <Switcher />
+
+          {/* change language selector */}
+          <button
+            onClick={handleLanguageChange}
+            className="font-normal text-dark dark:text-light"
+          >
+            {language === "en" ? "RU" : "EN"}
+          </button>
 
           {/* burger icon: mobile - show | desktop - hidden */}
           <button

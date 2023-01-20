@@ -10,6 +10,9 @@ import "swiper/css/navigation";
 // import data
 import { worksCaouselData } from "../data";
 
+// i18n
+import { t } from "i18next";
+
 const WorksCarousel = () => {
   return (
     <Swiper
@@ -63,7 +66,8 @@ const WorksCarousel = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Source code
+                {/* Source code */}
+                {t("works__carousel_btn_1")}
               </a>
               <a
                 href={demo}
@@ -71,7 +75,8 @@ const WorksCarousel = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live demo
+                {/* Live demo */}
+                {t("works__carousel_btn_2")}
               </a>
             </div>
           </SwiperSlide>

@@ -4,6 +4,9 @@ import React from "react";
 import WorksCarousel from "./WorksCarousel";
 import WorksMobileCarousel from "./WorksMobileCarousel";
 
+// i18n
+import { t } from "i18next";
+
 const Works = () => {
   return (
     <section id="works" className="bg-blue section">
@@ -11,7 +14,8 @@ const Works = () => {
       <div className="wrapper md:flex items-start justify-between mb-6">
         {/* title */}
         <h2 className="uppercase text-dark font-medium tracking-wide mb-10 text-center lg:text-left lg:text-xl flex items-center">
-          My Recent Works
+          {/* My Recent Works */}
+          {t("works__title")}
           <div className="w-12 h-[1px] lg:h-[1.6px] bg-dark ml-3" />
         </h2>
 

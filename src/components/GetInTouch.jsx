@@ -3,6 +3,9 @@ import React, { useState, useRef, useEffect } from "react";
 // import email
 import emailjs from "@emailjs/browser";
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 const GetInTouch = () => {
   const [emailMessage, setEmailMessage] = useState("");
   const [emailTextColor, setEmailTextColor] = useState("");
@@ -43,12 +46,15 @@ const GetInTouch = () => {
     e.target.reset();
   };
 
+  // translation
+  const { t } = useTranslation();
+
   return (
     <section id="touch" className="bg-lightGrey dark:bg-grey section">
       <div className="wrapper">
         {/* title */}
         <h2 className="uppercase text-blue font-medium tracking-wide mb-10 text-center lg:text-left lg:text-xl flex items-center">
-          Get in touch
+          {t("contact__title")}
           <div className="w-12 h-[1px] lg:h-[1.6px] bg-blue ml-3" />
         </h2>
 
@@ -63,27 +69,27 @@ const GetInTouch = () => {
             <input
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder={t("your__name")}
               required
               className="bg-transparent border border-grey dark:border-light rounded px-4 py-2 outline-none focus:ring-0 placeholder-grey/50 dark:placeholder-light/50 text-grey dark:text-light text-lg"
             />
             <input
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder={t("your__email")}
               required
               className="bg-transparent border border-grey dark:border-light rounded px-4 py-2 outline-none focus:ring-0 placeholder-grey/50 dark:placeholder-light/50 text-grey dark:text-light text-lg focus:invalid:text-red-500 focus:invalid:border-red-500"
             />
             <textarea
               name="message"
               rows="5"
-              placeholder="Your Message"
+              placeholder={t("your__message")}
               required
               className="bg-transparent border border-grey dark:border-light rounded px-4 py-2 outline-none focus:ring-0 placeholder-grey/50 dark:placeholder-light/50 text-grey dark:text-light text-lg resize-none"
             />
             <div className="flex gap-x-8 items-center">
               <button type="submit" className="btn btn-primary btnHover">
-                Send Message
+                {t("contact__btn")}
               </button>
               {/* info message */}
               <p style={{ color: emailTextColor }} className="text-lg">
@@ -95,7 +101,7 @@ const GetInTouch = () => {
           {/* messengers */}
           <div className="relative flex items-center justify-center w-full mt-6 border-[0.2px] border-t-grey my-6">
             <div className="absolute px-5 bg-lightGrey dark:bg-grey text-dark dark:text-light">
-              Or
+              {t("contact__or")}
             </div>
           </div>
           <div className="flex gap-x-4">
@@ -120,7 +126,7 @@ const GetInTouch = () => {
               </svg>
             </a>
             <a
-              href="https://wa.me/89969587558"
+              href="https://wa.me/+79969587558"
               target="_blank"
               rel="noopener noreferrer"
               className="py-[10px] rounded w-full border border-[#25D366] hover:bg-[#25D366] transition duration-300 grid place-items-center group"

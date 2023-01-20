@@ -13,6 +13,9 @@ import Node from "../assets/node.png";
 import Express from "../assets/express.png";
 import MongoDB from "../assets/mongodb.png";
 
+// i18n
+import { t } from "i18next";
+
 const Skills = () => {
   const props1 = {
     percent: 95,
@@ -94,7 +97,8 @@ const Skills = () => {
       <div className="wrapper">
         {/* title */}
         <h2 className="uppercase text-blue font-medium tracking-wide mb-10 text-center lg:text-left lg:text-xl flex items-center">
-          My skills
+          {/* My skills */}
+          {t("skills__title")}
           <div className="w-12 h-[1px] lg:h-[1.6px] bg-blue ml-3" />
         </h2>
 

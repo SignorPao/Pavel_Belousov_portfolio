@@ -9,6 +9,9 @@ import "swiper/css/effect-cube";
 // import data
 import { worksMobileCarouselData } from "../data";
 
+// i18n
+import { t } from "i18next";
+
 const WorksMobileCarousel = () => {
   return (
     <Swiper
@@ -49,7 +52,8 @@ const WorksMobileCarousel = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Source code
+                {/* Source code */}
+                {t("works__carousel_btn_1")}
               </a>
               <a
                 href={demo}
@@ -57,7 +61,8 @@ const WorksMobileCarousel = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live demo
+                {/* Live demo */}
+                {t("works__carousel_btn_2")}
               </a>
             </div>
           </SwiperSlide>

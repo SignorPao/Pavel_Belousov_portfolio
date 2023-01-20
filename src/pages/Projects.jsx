@@ -3,13 +3,20 @@ import React from "react";
 // import data
 import { projectsData } from "../data";
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 const Projects = () => {
+  // translation
+  const { t } = useTranslation();
+
   return (
     <div className="bg-light dark:bg-dark -mb-[1px]">
       <div className="wrapper pb-1 pt-32">
         {/* title */}
         <h2 className="uppercase text-blue font-medium tracking-wide mb-10 lg:text-xl flex items-center">
-          My Projects
+          {/* My Projects */}
+          {t("projects__title")}
           <div className="w-12 h-[1px] lg:h-[1.6px] bg-blue ml-3" />
         </h2>
 
@@ -41,7 +48,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Source code
+                    {/* Source code */}
+                    {t("works__carousel_btn_1")}
                   </a>
                   <a
                     href={demo}
@@ -49,7 +57,8 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Live demo
+                    {/* Live demo */}
+                    {t("works__carousel_btn_2")}
                   </a>
                 </div>
               </div>

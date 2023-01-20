@@ -12,7 +12,13 @@ import CV from "../assets/Pavel_Belousov_CV_2.pdf";
 // import typing animation
 import { TypeAnimation } from "react-type-animation";
 
+// i18next
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  // translation
+  const {t} = useTranslation()
+
   return (
     <header className="bg-header bg-cover bg-dark/10 dark:bg-dark/90 bg-blend-multiply dark:bg-blend-color-burn h-fit xl:h-screen bg-move">
       <div className="wrapper flex flex-col lg:flex-row justify-between h-full">
@@ -29,13 +35,20 @@ const Header = () => {
         <div className="flex-1 lg:flex-[40%] xl:flex-[42%] px-4 py-8 flex flex-col gap-y-6 justify-center items-center lg:items-start text-center lg:text-left">
           {/* title */}
           <h1 className="text-blue font-light text-3xl md:text-4xl lg:text-7xl xl:text-8xl">
-            Pavel Belousov
+            {/* Pavel Belousov */}
+            {t('header__title')}
           </h1>
 
           {/* subtitle */}
           <div className="text-dark dark:text-light font-medium text-xl md:text-3xl lg:text-4xl">
             <TypeAnimation
-              sequence={["Web developer", 3000, "Content creator", 3000]}
+              // sequence={["Web developer", 3000, "Content creator", 3000]}
+              sequence={[
+                `${t('header__subtitle_1')}`,
+                3000,
+                `${t('header__subtitle_2')}`,
+                3000,
+              ]}
               cursor={true}
               repeat={Infinity}
               speed={1}
@@ -44,18 +57,18 @@ const Header = () => {
 
           {/* description */}
           <div className="text-dark/90 dark:text-light/50 font-light text-base leading-6 lg:text-lg xl:text-xl">
-            Content creation is my passion! For many years, programming and
-            design was just a hobby for me. Now I have set the task - to turn a
-            hobby into a favorite profession.
+            {t('header__description')}
           </div>
 
           {/* buttons */}
           <div className="flex flex-col gap-y-6 items-center justify-center md:flex-row md:gap-x-4 lg:flex-col lg:items-start xl:flex-row">
             <a href={CV} download className="btn btn-primary btnHover">
-              Download CV
+              {/* Download CV */}
+              {t('header__btn_1')}
             </a>
             <Link to={"about"} className="btn btn-secondary btnHover">
-              Know Me
+              {/* Know Me */}
+              {t('header__btn_2')}
             </Link>
           </div>
         </div>

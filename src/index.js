@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
@@ -10,6 +10,9 @@ import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+
+// import translation
+import "./i18n";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +38,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<div>Loading...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </React.StrictMode>
 );

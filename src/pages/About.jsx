@@ -6,7 +6,13 @@ import { HashLink as Link } from "react-router-hash-link";
 // import image
 import AboutImg from "../assets/about-2.webp";
 
+// i18next
+import { Trans, useTranslation } from "react-i18next";
+
 const About = () => {
+  // translation
+  const { t } = useTranslation();
+
   return (
     <div className="bg-light dark:bg-dark -mb-[1px]">
       {/* about top */}
@@ -15,7 +21,7 @@ const About = () => {
           {/* title */}
           <div className="flex-1 flex items-center">
             <h1 className="text-dark dark:text-light font-light text-3xl md:text-4xl lg:text-7xl xl:text-8xl capitalize">
-              About me
+              {t("about__title")}
             </h1>
           </div>
 
@@ -37,61 +43,58 @@ const About = () => {
           <div className="md:flex-[65%] flex flex-col gap-y-6 lg:gap-y-10 xl:gap-y-12">
             {/* title */}
             <h2 className="text-blue font-light text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Hey, I'm Pavel
+              {t("hey")}
             </h2>
 
             {/* quote */}
             <div className="bg-lightGrey dark:bg-grey/80 py-6 px-8 border-l-4 border-blue">
               <p className="font-crimson italic text-2xl lg:text-3xl xl:text-4xl">
-                If one does not know to which port one is sailing, no wind is
-                favorable.
+                {t("quote")}
               </p>
               <span className="text-xs lg:text-sm font-extralight text-dark/60 dark:text-light/40">
-                Seneca
+                {t("quote__author")}
               </span>
             </div>
 
             {/* description */}
             <div className="flex flex-col gap-y-4 lg:gap-y-6 font-light text-base lg:text-lg xl:text-xl">
               <p>
-                I am a web developer, web designer and content creator. I have
-                been studying modern web development and UI/UX design for the
-                last year. During this time I have created more than{" "}
-                <Link to={"/projects"} className="font-medium hover:underline">
-                  20 websites
-                </Link>{" "}
-                and developed my own unique style, which, I am sure, can be of
-                interest to many people.
+                {t("about__text_1")}{" "}
+                <Trans i18nKey="about__text_2">
+                  During this time I have created more than{" "}
+                  <Link
+                    to={"/projects"}
+                    className="font-medium hover:underline"
+                  >
+                    20 websites
+                  </Link>{" "}
+                  and developed my own unique style, which, I am sure, can be of
+                  interest to many people.
+                </Trans>
               </p>
               <p>
-                Besides the mentioned{" "}
-                <Link to={"/#skills"} className="font-medium hover:underline">
-                  web technologies
-                </Link>
-                , I have development experience using technologies such as Saas,
-                Less and Bootstrap. I have some experience in backend
-                development, I'm working on it :)
+                <Trans i18nKey="about__text_3">
+                  Besides the mentioned{" "}
+                  <Link to={"/#skills"} className="font-medium hover:underline">
+                    web technologies
+                  </Link>
+                  , I have development experience using technologies such as
+                  Saas, Less and Bootstrap.
+                </Trans>
+                {t("about__text_4")}
               </p>
-              <p>
-                I regularly practice web design using Figma and Photoshop. I am
-                fairly familiar with basic Linux terminal commands. I have real
-                experience in copywriting: written more than 100 articles of
-                which 92 are currently sold, without a single return or negative
-                feedback.
-              </p>
-              <p>
-                I live in Yoshkar-Ola, Russia. I love to cook, travel and play
-                outdoor sports. Thank you for your time!
-              </p>
+              <p>{t("about__text_5")}</p>
+              <p>{t("about__text_6")}</p>
             </div>
           </div>
 
           {/* contacts */}
           <div className="md:flex-[35%] flex flex-col gap-y-4">
-            <h3 className="text-xl lg:text-3xl xl:text-4xl">Let's talk</h3>
+            <h3 className="text-xl lg:text-3xl xl:text-4xl">
+              {t("let's__talk")}
+            </h3>
             <p className="font-light text-sm lg:text-base">
-              My social networks and messengers are always open. Please feel
-              free to leave your messages.
+              {t("about__socials")}
             </p>
             <ul className="flex gap-x-4 xl:gap-x-8 items-center">
               <li>
@@ -118,7 +121,7 @@ const About = () => {
 
               <li>
                 <a
-                  href="https://wa.me/89969587558"
+                  href="https://wa.me/+79969587558"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
