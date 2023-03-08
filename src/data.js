@@ -5,6 +5,7 @@ import Mobile3 from "../src/assets/works/mobile-3.webp";
 import Mobile4 from "../src/assets/works/mobile-4.webp";
 import Mobile5 from "../src/assets/works/mobile-5.webp";
 import Mobile6 from "../src/assets/works/mobile-6.webp";
+import Mobile7 from "../src/assets/works/mobile-7.webp";
 
 import Pc1 from "../src/assets/works/Screenshot_20-min.webp";
 import Pc2 from "../src/assets/works/Screenshot_1-min.webp";
@@ -26,9 +27,15 @@ import Pc17 from "../src/assets/works/Screenshot_18-min.webp";
 import Pc18 from "../src/assets/works/Screenshot_19-min.webp";
 import Pc19 from "../src/assets/works/Screenshot_21-min.webp";
 import Pc20 from "../src/assets/works/Screenshot_23-min.webp";
+import Pc21 from "../src/assets/works/Screenshot_24-min.webp";
 
 // works mobile carousel data
 export const worksMobileCarouselData = [
+  {
+    image: Mobile7,
+    code: "https://github.com/SignorPao/react-informational-website",
+    demo: "https://hochu-vse-znat.vercel.app/",
+  },
   {
     image: Mobile1,
     code: "https://github.com/SignorPao/figma-project-four",
@@ -64,6 +71,11 @@ export const worksMobileCarouselData = [
 // works carousel data
 export const worksCaouselData = [
   {
+    image: Pc21,
+    code: "https://github.com/SignorPao/react-informational-website",
+    demo: "https://hochu-vse-znat.vercel.app/",
+  },
+  {
     image: Pc1,
     code: "https://github.com/SignorPao/figma-project-four",
     demo: "https://figma-project-four.vercel.app/",
@@ -97,6 +109,11 @@ export const worksCaouselData = [
 
 // projects page data
 export const projectsData = [
+  {
+    image: Pc21,
+    code: "https://github.com/SignorPao/react-informational-website",
+    demo: "https://hochu-vse-znat.vercel.app/",
+  },
   {
     image: Pc1,
     code: "https://github.com/SignorPao/figma-project-four",
