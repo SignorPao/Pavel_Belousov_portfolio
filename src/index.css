@@ -19,7 +19,7 @@
   }
   
   .btn {
-    @apply uppercase py-4 px-8 rounded font-medium w-fit tracking-wide lg:text-xl relative overflow-hidden;
+    @apply uppercase py-3 lg:py-4 px-6 lg:px-8 rounded font-medium w-fit tracking-wide lg:text-xl relative overflow-hidden;
   }
   .btn-primary {
     @apply bg-blue relative overflow-hidden;
