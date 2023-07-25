@@ -36,7 +36,7 @@ const Skills = () => {
     number: false,
   };
   const props3 = {
-    percent: 55,
+    percent: 65,
     colorSlice: "#FFDF00",
     colorCircle: "#a1a1a130",
     size: 180,
@@ -45,7 +45,7 @@ const Skills = () => {
     number: false,
   };
   const props4 = {
-    percent: 50,
+    percent: 60,
     colorSlice: "#61DAFB",
     colorCircle: "#a1a1a130",
     size: 180,
@@ -54,7 +54,7 @@ const Skills = () => {
     number: false,
   };
   const props5 = {
-    percent: 70,
+    percent: 75,
     colorSlice: "#06B6D4",
     colorCircle: "#a1a1a130",
     size: 180,

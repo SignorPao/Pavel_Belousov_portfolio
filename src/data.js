@@ -28,6 +28,9 @@ import Pc18 from "../src/assets/works/Screenshot_19-min.webp";
 import Pc19 from "../src/assets/works/Screenshot_21-min.webp";
 import Pc20 from "../src/assets/works/Screenshot_23-min.webp";
 import Pc21 from "../src/assets/works/Screenshot_24-min.webp";
+import Pc22 from "../src/assets/works/Screenshot_25-min.webp";
+import Pc23 from "../src/assets/works/Screenshot_26-min.webp";
+import Pc24 from "../src/assets/works/Screenshot_27-min.webp";
 
 // works mobile carousel data
 export const worksMobileCarouselData = [
@@ -113,6 +116,21 @@ export const projectsData = [
     image: Pc21,
     code: "https://github.com/SignorPao/react-informational-website",
     demo: "https://hochu-vse-znat.vercel.app/",
+  },
+  {
+    image: Pc24,
+    code: "https://github.com/SignorPao/restore-react-1",
+    demo: "https://adina-hotel-react-app.netlify.app/",
+  },
+  {
+    image: Pc22,
+    code: "https://github.com/SignorPao/nextjs-3",
+    demo: "https://nextjs-3-theta.vercel.app/",
+  },
+  {
+    image: Pc23,
+    code: "https://github.com/SignorPao/restore-react-0",
+    demo: "https://weekaway-react-app.netlify.app/",
   },
   {
     image: Pc1,
