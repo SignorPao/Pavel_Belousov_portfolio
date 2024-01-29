@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200;1,300;1,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,7 @@
   .lock {
     @apply overflow-hidden;
   }
-  
+
   .btn {
     @apply uppercase py-3 lg:py-4 px-6 lg:px-8 rounded font-medium w-fit tracking-wide lg:text-xl relative overflow-hidden;
   }
@@ -41,7 +41,7 @@ html {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,12 +52,20 @@ html.light ::-webkit-scrollbar-thumb {
   background-color: #444444;
 }
 
+html.light ::-webkit-scrollbar-thumb:hover {
+  background-color: #333333;
+}
+
 html.light ::-webkit-scrollbar-track {
   background-color: #ededed;
 }
 
 html.dark ::-webkit-scrollbar-thumb {
   background-color: #444444;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
 }
 
 html.dark ::-webkit-scrollbar-track {
@@ -117,10 +125,10 @@ html.dark ::-webkit-scrollbar-track {
 
 /* link hover effect */
 .link::after {
-  content: '';
+  content: "";
   width: 0;
   height: 2.3px;
-  background-color: #2A86FF;
+  background-color: #2a86ff;
   margin: auto;
   display: block;
 }
@@ -149,4 +157,10 @@ html.dark ::-webkit-scrollbar-track {
 
 .btnHover:hover::before {
   left: 100%;
+}
+
+.scrollUp{
+  position: fixed;
+  right: 1rem;
+  bottom: 3rem;
 }

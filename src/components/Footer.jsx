@@ -224,7 +224,7 @@ const Footer = () => {
         {/* footer bottom */}
         <div className="flex justify-between text-xs pt-6 text-dark/90 dark:text-light/50">
           <div className="text-center lg:text-left">
-            &copy; {year} {t("header__title")}
+            &copy; 2021 - {year} {t("header__title")}
           </div>
           <div className="text-center lg:text-left">
             {t("created")}
