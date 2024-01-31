@@ -16,8 +16,10 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         header: "url('assets/bg-2.webp')",
-        logoDark: "url('assets/PB2.png')",
-        logoLight: "url('assets/PB.png')",
+        // logoDark: "url('assets/PB2.png')",
+        logoDark: "url('assets/PB2.webp')",
+        // logoLight: "url('assets/PB.png')",
+        logoLight: "url('assets/PB.webp')",
       }),
       container: {
         padding: {
