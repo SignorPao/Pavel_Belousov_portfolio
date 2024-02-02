@@ -4,15 +4,22 @@ import React from "react";
 import { CircularProgressBar } from "@tomik23/react-circular-progress-bar";
 
 // import icons
-import HTML from "../assets/html-5.png";
-import CSS from "../assets/css-3.png";
-import JS from "../assets/js.png";
+// import HTML from "../assets/html-5.png";
+import HTML from "../assets/html-5.webp";
+// import CSS from "../assets/css-3.png";
+import CSS from "../assets/css-3.webp";
+// import JS from "../assets/js.png";
+import JS from "../assets/js.webp";
 // import ReactLogo from "../assets/react.png";
 import ReactLogo from "../assets/react.webp";
-import Tailwind from "../assets/tailwind.png";
-import Node from "../assets/node.png";
-import Express from "../assets/express.png";
-import MongoDB from "../assets/mongodb.png";
+// import Tailwind from "../assets/tailwind.png";
+import Tailwind from "../assets/tailwind.webp";
+// import Node from "../assets/node.png";
+import Node from "../assets/node.webp";
+// import Express from "../assets/express.png";
+import Express from "../assets/express.webp";
+// import MongoDB from "../assets/mongodb.png";
+import MongoDB from "../assets/mongodb.webp";
 
 // i18n
 import { t } from "i18next";

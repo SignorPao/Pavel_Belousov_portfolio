@@ -26,11 +26,11 @@ const About = () => {
           </div>
 
           {/* image */}
-          <div className="flex-1 h-full w-full flex items-center justify-center md:justify-end">
+          <div className="flex-1 h-full w-full flex items-center justify-center md:justify-end overflow-hidden">
             <img
               src={AboutImg}
               alt="about hero"
-              className="object-cover h-full md:h-[30vh] xl:h-[40vh] max-w-full"
+              className="object-cover h-full md:h-[30vh] xl:h-[40vh] max-w-full drop-shadow-xl"
             />
           </div>
         </div>
