@@ -14,7 +14,7 @@ const ScrollUp = () => {
       href="#"
       className={`${
         isScroll ? "bottom-24 xl:bottom-16" : "-bottom-1/2"
-      } w-10 h-10 bg-light dark:bg-[#272727] shadow-md flex justify-center items-center rounded z-10 fixed right-4 xl:right-8 hover:-translate-y-2 duration-300`}
+      } w-10 h-10 bg-light dark:bg-[#272727] shadow-md flex justify-center items-center rounded z-10 fixed right-4 xl:right-8 hover:-translate-y-2 duration-300 btnHover overflow-hidden`}
     >
       <svg
         width="16"
