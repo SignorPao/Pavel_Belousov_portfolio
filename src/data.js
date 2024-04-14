@@ -35,6 +35,11 @@ import Pc25 from "../src/assets/works/Screenshot_28-min.webp";
 import Pc26 from "../src/assets/works/Screenshot_29-min.webp";
 import Pc27 from "../src/assets/works/Screenshot_30-min.webp";
 import Pc28 from "../src/assets/works/Screenshot_31-min.webp";
+import Pc29 from "../src/assets/works/Screenshot_32-min.webp";
+import Pc30 from "../src/assets/works/Screenshot_33-min.webp";
+import Pc31 from "../src/assets/works/Screenshot_34-min.webp";
+import Pc32 from "../src/assets/works/Screenshot_35-min.webp";
+import Pc33 from "../src/assets/works/Screenshot_36-min.webp";
 
 // works mobile carousel data
 export const worksMobileCarouselData = [
@@ -117,6 +122,21 @@ export const worksCaouselData = [
 // projects page data
 export const projectsData = [
   {
+    image: Pc33,
+    code: "https://github.com/SignorPao/html-css-js-9",
+    demo: "https://html-css-js-9.vercel.app/",
+  },
+  {
+    image: Pc32,
+    code: "https://github.com/SignorPao/html-css-js-8",
+    demo: "https://html-css-js-8.netlify.app/",
+  },
+  {
+    image: Pc31,
+    code: "https://github.com/SignorPao/html-css-js-7",
+    demo: "https://html-css-js-7.vercel.app/",
+  },
+  {
     image: Pc21,
     code: "https://github.com/SignorPao/react-informational-website",
     demo: "https://hochu-vse-znat.vercel.app/",
@@ -127,6 +147,11 @@ export const projectsData = [
     demo: "https://html-css-js-4.netlify.app/",
   },
   {
+    image: Pc29,
+    code: "https://github.com/SignorPao/html-css-js-5",
+    demo: "https://html-css-js-5.vercel.app/",
+  },
+  {
     image: Pc27,
     code: "https://github.com/SignorPao/html-css-js-3",
     demo: "https://html-css-js-3.netlify.app/",
@@ -135,6 +160,11 @@ export const projectsData = [
     image: Pc26,
     code: "https://github.com/SignorPao/html-css-js-1",
     demo: "https://signorpao.github.io/html-css-js-1/",
+  },
+  {
+    image: Pc30,
+    code: "https://github.com/SignorPao/html-css-js-6",
+    demo: "https://html-css-js-6.netlify.app/",
   },
   {
     image: Pc25,

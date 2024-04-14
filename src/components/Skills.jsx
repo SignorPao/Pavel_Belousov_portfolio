@@ -35,7 +35,7 @@ const Skills = () => {
     number: false,
   };
   const props2 = {
-    percent: 90,
+    percent: 95,
     colorSlice: "#2196F3",
     colorCircle: "#a1a1a130",
     size: 180,
