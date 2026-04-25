@@ -45,6 +45,7 @@ import Pc35 from "../src/assets/works/Screenshot_38-min.webp";
 import Pc36 from "../src/assets/works/Screenshot_39-min.webp";
 import Pc37 from "../src/assets/works/Screenshot_40-min.webp";
 import Pc38 from "../src/assets/works/Screenshot_41-min.webp";
+import Pc39 from "../src/assets/works/Screenshot_42.webp";
 
 // works mobile carousel data
 export const worksMobileCarouselData = [
@@ -126,6 +127,11 @@ export const worksCaouselData = [
 
 // projects page data
 export const projectsData = [
+  {
+    image: Pc39,
+    code: "https://github.com/SignorPao/html-css-js-15",
+    demo: "https://html-css-js-15.vercel.app/",
+  },
   {
     image: Pc38,
     code: "https://github.com/SignorPao/html-css-js-14",
